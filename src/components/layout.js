@@ -25,22 +25,22 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 2000,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
-      >
+      > */}
         <main>{children}</main>
-        <footer>
+        {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
-      </div>
+      </div> */}
     </>
   )
 }

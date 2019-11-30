@@ -1,0 +1,107 @@
+.portfolio-page {
+    display: flex;
+}
+
+.navbar-container {
+    width: 25%;
+    height: 100vh;
+    background: #293042;
+    text-align: center;
+    
+}
+
+
+.main-container {
+    background: #191920;
+    width: 75%;
+   
+}
+
+.navbar-list {
+    /* border: blue 2px dashed; */
+    margin-top: 20%;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+.navbar-list p {
+    color: #F2F2F2;
+}
+
+.navbar-pages-container {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.navbar-pages {
+    display: table;
+    width: auto;
+    margin-bottom: 15%;
+}
+
+.navbar-pages p {
+    color: #F2F2F2;
+    font-size: 15px;
+    margin-bottom: 0px;
+    display: inline-block;
+    font-family: Roboto;
+}
+.faFileCode {
+    color: red;
+}
+
+.folder-name-container {
+    display: table;
+    width: auto;
+    margin-bottom: 10%
+}
+
+.folder-name-container p {
+    color: #F2F2F2;
+    font-size: 18px;
+    margin-bottom: 0px;
+    display: inline-block;
+    font-family: Roboto;
+}
+
+/* */
+
+.header-container {
+   /* background-color: teal; */
+}
+
+.user-info {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.user-info p {
+    font-size: 15px;
+    margin-bottom: -5px;
+    font-family: Roboto;
+    color: #F2F2F2;
+}
+
+.user-info-container {
+    display: inline-block;
+    padding: 1rem 2rem;
+   
+}
+
+.icons-container {
+    float: right;
+    padding: 1.45rem 1.0875rem;
+    
+    
+}
+
+.icons-container a {
+    margin-left: 10px;
+    color: white;
+}
+
+body {
+    font-family: Roboto;
+}
