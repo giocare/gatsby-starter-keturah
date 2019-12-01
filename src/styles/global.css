@@ -105,3 +105,85 @@
 body {
     font-family: Roboto;
 }
+
+html body {
+    height: 100vh;
+    background-color: #A5639F;
+}
+
+.terminal-container {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    padding: 2% 0 2% 2%;
+    box-shadow: 5px 5px 5px black;
+}
+
+.terminal-nav {
+    display: grid;
+    margin-bottom: 7%;
+}
+
+.circles-container {
+    display: flex;
+}
+
+.circle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.terminal-title {
+    position: absolute;
+    top: 4.5%;
+    left: 45%;
+    transform: translateX(45%);
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 1.5%;
+}
+
+.angle-right {
+    margin-top: .6%;
+    margin-right: 3%;
+}
+
+@media all and (max-width: 800px) {
+    .terminal-container {
+        width: 92%;
+        height: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 4% 0 4% 4%;
+    }
+    
+    .terminal-nav {
+        margin-bottom: 20%;
+    }
+    
+    .terminal-title {
+        top: 2.2%;
+        left: 42%;
+        transform: translateX(42%);
+    }
+    
+    .row {
+        margin-bottom: 4%;
+    }
+    
+    .angle-right {
+        margin-top: 1.2%;
+    }
+}
