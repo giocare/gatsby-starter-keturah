@@ -187,3 +187,10 @@ html body {
         margin-top: 1.2%;
     }
 }
+
+/* PROJECT CARDS */
+.project-container {
+    border: blue 2px dashed;
+    width: 70%;
+    
+}

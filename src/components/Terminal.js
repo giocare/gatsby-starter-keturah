@@ -21,7 +21,7 @@ const Terminal = ({ data }) => {
   }
   
   setTimeout(() => {
-    window.location.href = '/page-2';
+    window.location.href = '/portfolio';
   }, 28000);
   
   return (

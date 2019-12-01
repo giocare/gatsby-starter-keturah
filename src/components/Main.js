@@ -5,7 +5,7 @@ import Header from "../components/header"
 import ProjectCards from "../components/ProjectCards"
 
 
-const Main = () => (
+const Main = ({data}) =>  (
   <div className="main-container">
     <Header />
     <ProjectCards /> 
