@@ -43,7 +43,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Roboto', 'Droid Serif']
+          families: ['Roboto', 'Droid Serif', 'Abril Fatface', 'Poppins']
         }
       }
     },

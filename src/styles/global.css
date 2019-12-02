@@ -14,7 +14,7 @@
 .main-container {
     background: #191920;
     width: 75%;
-   
+    height:  100vh;
 }
 
 .navbar-list {
@@ -46,6 +46,7 @@
     margin-bottom: 0px;
     display: inline-block;
     font-family: Roboto;
+    text-decoration: none;
 }
 .faFileCode {
     color: red;
@@ -189,8 +190,100 @@ html body {
 }
 
 /* PROJECT CARDS */
+
+header {
+    display: flex;
+}
+
+
+.line-numbers {
+    height: 10vh;
+    width: 1.5%;
+    color: #6B7388;
+    float: left;
+    margin-left: 5%;
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: right;
+}
+
+
+.divider {
+    height: 92vh;
+    width: 0.25%;
+    background-color: #2A3243;
+    /* display: inline-block */
+    float: left;
+    margin-left: 2%;
+}
+
+
 .project-container {
-    border: blue 2px dashed;
     width: 70%;
+    margin-bottom: 40px;
+    display: flex;
+    /* float: right; */
+    /* display: inline-block; */
+    margin-left: 20%;
+}
+
+.project-leftside {
+    /* display: flex;
+    flex-direction: column; */
+    width: 60%;
+}
+
+.project-type {
+    font-family: Abril Fatface;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.project-title {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: lighter;
+    color: #868893;
+    margin-bottom: 10px;
+}
+
+.project-excerpt {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #E2E2E2;
+    width: 100%;
+}
+
+.project-text {
+    background-color: #3F4255;
+    margin-bottom: 20px; 
+    padding: 60px 100px 40px 60px;
     
 }
+
+.project-tools {
+    padding: 10px 0px 10px  60px;
+    background-color: #3F4255;
+    word-spacing: 30px;
+}
+
+.project-tools p {
+    margin-bottom: 0px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: lighter;
+    color:white;
+}
+
+.project-image-container {
+    width: 30%;
+}
+
+.project-image {
+    height: 400px;
+}
+
+
+

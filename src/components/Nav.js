@@ -5,40 +5,40 @@ import { faAngleDown, faFolder } from '@fortawesome/free-solid-svg-icons'
 import { faFile } from '@fortawesome/free-regular-svg-icons'
 
 class Nav extends React.Component  {
-  constructor() {
-    super();
-    this.state = {
-      home_active: true,
-      about_active: false,
-      is_post: false,
-      home_classname: "nav-item active-link",
-      about_classname: "nav-item",
-      post_nav_container: "nav-container",
-    }
-  }
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     portfolio_active: true,
+  //     about_active: false,
+  //     is_post: false,
+  //     home_classname: "nav-item active-link",
+  //     about_classname: "nav-item",
+  //     post_nav_container: "nav-container",
+  //   }
+  // }
   
-  componentDidMount() {
-    if(window.location.href.includes("blogs")) {
-      this.setState({ 
-        home_active: false,
-        about_active: false,
-        is_post: true,
-        home_classname: "nav-item",
-        about_classname: "nav-item",
-        post_nav_container: "post-nav-container",
-      })
-    }
-    else if(window.location.href.includes("about")) {
-      this.setState({ 
-        home_active: false,
-        about_active: true,
-        is_post: false,
-        home_classname: "nav-item",
-        about_classname: "nav-item active-link",
-        post_nav_container: "nav-container",
-      })
-    }
-  }
+  // componentDidMount() {
+  //   if(window.location.href.includes("portfolio")) {
+  //     this.setState({ 
+  //       home_active: false,
+  //       about_active: false,
+  //       is_post: true,
+  //       home_classname: "nav-item",
+  //       about_classname: "nav-item",
+  //       post_nav_container: "post-nav-container",
+  //     })
+  //   }
+  //   else if(window.location.href.includes("about")) {
+  //     this.setState({ 
+  //       home_active: false,
+  //       about_active: true,
+  //       is_post: false,
+  //       home_classname: "nav-item",
+  //       about_classname: "nav-item active-link",
+  //       post_nav_container: "nav-container",
+  //     })
+  //   }
+  // }
   
   render() {
     return(
@@ -55,22 +55,22 @@ class Nav extends React.Component  {
             <div className="navbar-pages">
                 <FontAwesomeIcon icon={ faFile } style={{ color: '#536A7C', fontSize:'30px', float:'left'}}/>
                 &nbsp;&nbsp;&nbsp;
-                <p>index.html</p>
+                <Link to="/"><p>index.html</p></Link>
             </div>
             <div className="navbar-pages">
                 <FontAwesomeIcon icon={ faFile } style={{ color: '#536A7C', fontSize:'30px', float:'left'}}/>
                 &nbsp;&nbsp;&nbsp;
-                <p>about.html</p>
+                <Link to="/"><p>about.html</p></Link>
             </div>
             <div className="navbar-pages">
                 <FontAwesomeIcon icon={ faFile } style={{ color: '#86CAFF', fontSize:'30px', float:'left'}}/>
                 &nbsp;&nbsp;&nbsp;
-                <p>projects.html</p>
+                <Link to="/about"><p>projects.html</p></Link>
             </div>
             <div className="navbar-pages">
                 <FontAwesomeIcon icon={ faFile } style={{ color: '#536A7C', fontSize:'30px', float:'left'}}/>
                 &nbsp;&nbsp;&nbsp;
-                <p>contacts.html</p>
+                <Link to="/"><p>contact.html</p></Link>
             </div>
         
         </div>
@@ -82,3 +82,5 @@ class Nav extends React.Component  {
 
 
 export default Nav;
+
+{/* <Link to="/" className="nav-brand">Amelia</Link> */}
