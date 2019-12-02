@@ -83,4 +83,3 @@ class Nav extends React.Component  {
 
 export default Nav;
 
-{/* <Link to="/" className="nav-brand">Amelia</Link> */}

@@ -1,5 +1,4 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+
 import React from "react"
 import InstagramSVG from "../Icons/InstagramSVG"
 import LinkedInSVG from "../Icons/LinkedInSVG"

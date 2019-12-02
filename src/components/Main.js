@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Header from "../components/header"
 import ProjectCards from "../components/ProjectCards"

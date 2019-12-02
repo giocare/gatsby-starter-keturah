@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import SEO from "../components/seo"
 
 import Nav from "../components/Nav"
