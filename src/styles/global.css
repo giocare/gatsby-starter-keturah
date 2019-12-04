@@ -317,10 +317,10 @@ header {
     }
     
     .project-container {
-        width: 90%;
+        width: 85%;
         margin-bottom: 40px;
         display: flex;
-        margin-left: 13%;
+        margin-right: 1%;
     }
     
     .project-tools {
@@ -339,5 +339,9 @@ header {
     
     .project-excerpt {
         font-size: 13px;
+    }
+
+    .line-numbers {
+        width: 6%;
     }
 }
