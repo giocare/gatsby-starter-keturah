@@ -1,17 +1,56 @@
-import React from "react"
+import React, { Component } from "react"
 import SEO from "../components/seo"
 
 import Nav from "../components/Nav"
 import Main from "../components/Main"
 
 
+class PortfolioPage extends Component {
+  constructor() {
+    super();
+    this.state = {
+      navToggle: false
+    }
+  }
+  
+  componentDidMount() {
+    if(window.screen.availWidth < 800) {
+      this.setState({ navToggle: true })
+    }
+    else {
+      this.setState({ navToggle: false })
+    }
+  }
+  
+  render() {
+    console.log(this.state.navToggle, window.screen.availWidth)
+    const toggler = () => {
+      if(this.state.navToggle === true) {
+        return(
+          <div className="portfolio-page">
+            <SEO title="Page two" />
+            <Main />
+          </div>
+        );
+      }
+      else {
+        return(
+          <div className="portfolio-page">
+            <SEO title="Page two" />
+            <Nav />
+            <Main />
+          </div>
+        );
+      }
+    }
+    
+    return (
+      <div className="portfolio-page-container">
+        {toggler()}
+      </div>
+    )
+  }
+}
 
-const PortfolioPage = ({data}) => (
-  <div className="portfolio-page">
-    <SEO title="Page two" />
-    <Nav />
-    <Main />
-  </div>
-)
 
-export default PortfolioPage
+export default PortfolioPage;
