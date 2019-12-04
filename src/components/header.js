@@ -21,8 +21,8 @@ const Header = ({ siteTitle }) => (
           <p>Morgan Matthews</p>
           <p>Front-End Developer</p>
         </div>
-        <div className="user-info">
-          <FontAwesomeIcon icon={ faTimes } style={{ color: '#C4C4C4', fontSize:'20px', fontWeight:'1px', display:'inline-block'}}/>  
+        <div className="x-icon">
+          <FontAwesomeIcon icon={ faTimes } style={{ color: '#C4C4C4', fontSize:'20px', fontWeight:'0px', display:'inline-block'}}/>  
         </div>
       </div>
       
