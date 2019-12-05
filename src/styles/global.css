@@ -69,9 +69,6 @@
 
 /* */
 
-.header-container {
-   /* background-color: teal; */
-}
 
 .user-info {
     display: inline-block;
@@ -344,4 +341,54 @@ header {
     .line-numbers {
         width: 6%;
     }
+}
+
+/* =======A B O U T  P A G E================== */
+.about-page {
+    display: flex;
+}
+
+.about-container {
+    background: #191920;
+    width: 100%;
+    height:  100vh;
+    overflow: auto
+}
+
+.comments {
+    display: inline-block;
+    color: rgb(71, 71, 71);
+    line-height: 5px;
+    margin-left: 10%;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.about-main-section {
+    display: inline-block;
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.about-list {
+    list-style-type: none;
+    color: lightgray;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 16px;
+    display: inline-block;
+    width: 40%;
+    /* border: blue 2px solid; */
+}
+
+.about-image-container {
+    display: inline-block;
+    width: 40%;
+    object-fit: cover;
+    /* border: red 2px solid; */
+}
+
+.tag-info {
+    text-indent: 17px
 }

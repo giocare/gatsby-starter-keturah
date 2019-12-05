@@ -60,12 +60,12 @@ class Nav extends React.Component  {
             <div className="navbar-pages">
                 <FontAwesomeIcon icon={ faFile } style={{ color: '#536A7C', fontSize:'30px', float:'left'}}/>
                 &nbsp;&nbsp;&nbsp;
-                <Link to="/"><p>about.html</p></Link>
+                <Link to="/about"><p>about.html</p></Link>
             </div>
             <div className="navbar-pages">
                 <FontAwesomeIcon icon={ faFile } style={{ color: '#86CAFF', fontSize:'30px', float:'left'}}/>
                 &nbsp;&nbsp;&nbsp;
-                <Link to="/about"><p>projects.html</p></Link>
+                <Link to="/portfolio"><p>projects.html</p></Link>
             </div>
             <div className="navbar-pages">
                 <FontAwesomeIcon icon={ faFile } style={{ color: '#536A7C', fontSize:'30px', float:'left'}}/>

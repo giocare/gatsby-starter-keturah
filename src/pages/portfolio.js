@@ -5,6 +5,7 @@ import Nav from "../components/Nav"
 import Main from "../components/Main"
 
 
+
 class PortfolioPage extends Component {
   constructor() {
     super();
@@ -28,7 +29,7 @@ class PortfolioPage extends Component {
       if(this.state.navToggle === true) {
         return(
           <div className="portfolio-page">
-            <SEO title="Page two" />
+            <SEO title="Portfolio" />
             <Main />
           </div>
         );
@@ -36,7 +37,7 @@ class PortfolioPage extends Component {
       else {
         return(
           <div className="portfolio-page">
-            <SEO title="Page two" />
+            <SEO title="Portfolio" />
             <Nav />
             <Main />
           </div>
