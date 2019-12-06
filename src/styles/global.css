@@ -407,19 +407,25 @@ ul {
 
 @media all and (max-width: 800px) {
 
+    .about-content-container {
+        margin-left:20%;
+    }
+
     .about-main-section {
         display: flex;
         flex-direction: column;
+        margin: 0;
+        width:80%
     }
     .about-image-container {
         order: 1;
         width: 100%;
-        margin-left: 10%;
     }
 
     .about-list {
         width: 100%;
         order: 2;
+        margin-left:10%
     }
 
 }
