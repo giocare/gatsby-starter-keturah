@@ -41,7 +41,7 @@ class Bio extends React.Component  {
               </li>
               <li>
                 <p><span style={{ color: "#86FFF8"}}>.bio</span> &#123; </p>
-                  <p className="tag-info">In my spare time, I love to swim surf, ski and yada yada yada sehddhvfduifhf rufjfdiuhfr eiefhresuhf8re bueihfurihgrueire reuhrehfreurerf rherhfurerherhiu ehrjhfbiesr rbfresjhrehuofer rhberhfhr rhfrhereuire rerhrhfrerf </p>
+                  <p className="tag-info">I am from New York, where she I work as a senior web engineer at Flywheel, WordPress hosting for creatives. I has 6 years of experience as a Full Stack engineer with a focus on APIs and creating responsive sites. In my spare time you can find me listening to true-crime podcasts, skateboarding in Prospect Park or teaching a spin class. </p>
                 <p>&#125;</p>
               </li>
               <li>

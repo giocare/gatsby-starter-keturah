@@ -392,3 +392,25 @@ header {
 .tag-info {
     text-indent: 17px
 }
+
+@media all and (max-width: 800px) {
+
+    .about-main-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-image-container {
+        order: 1;
+        width: 100%;
+        margin-left: 10%;
+    
+    }
+
+    .about-list {
+        width: 100%;
+        order: 2;
+    }
+
+    
+
+}
