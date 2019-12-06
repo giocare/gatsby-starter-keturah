@@ -19,7 +19,6 @@
 }
 
 .navbar-list {
-    /* border: blue 2px dashed; */
     margin-top: 20%;
     text-align: center;
     display: inline-block;
@@ -33,6 +32,10 @@
 .navbar-pages-container {
     margin: 0 auto;
     display: inline-block;
+}
+
+.navbar-pages-container p:hover{
+    color: #86CAFF;
 }
 
 .navbar-pages {
