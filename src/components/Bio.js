@@ -1,17 +1,6 @@
 import React from "react"
 import picture from "../images/about-picture.jpg"
 
-
-// const Bio = () =>  (
-//   render(
-    
-//   )
- 
-// )
-
-
-
-
 class Bio extends React.Component  {
   render(){
     return(

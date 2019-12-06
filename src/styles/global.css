@@ -173,7 +173,7 @@ html body {
     margin-right: 3%;
 }
 
-/* PROJECT CARDS */
+/* =======P R O J E C T  C A R D S================== */
 
 header {
     display: flex;
@@ -206,15 +206,11 @@ header {
     width: 70%;
     margin-bottom: 40px;
     display: flex;
-    /* float: right; */
-    /* display: inline-block; */
     margin-left: 20%;
     
 }
 
 .project-leftside {
-    /* display: flex;
-    flex-direction: column; */
     width: 60%;
 }
 
@@ -389,14 +385,12 @@ header {
     font-size: 16px;
     display: inline-block;
     width: 40%;
-    /* border: blue 2px solid; */
 }
 
 .about-image-container {
     display: inline-block;
     width: 40%;
     object-fit: cover;
-    /* border: red 2px solid; */
 }
 
 .tag-info {
@@ -413,14 +407,11 @@ header {
         order: 1;
         width: 100%;
         margin-left: 10%;
-    
     }
 
     .about-list {
         width: 100%;
         order: 2;
     }
-
-    
 
 }
