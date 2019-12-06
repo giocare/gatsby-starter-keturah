@@ -20,9 +20,11 @@ const Terminal = ({ data }) => {
     }
   }
   
-  setTimeout(() => {
-    window.location.href = '/portfolio';
-  }, 28000);
+  if(window.location.href === "http://localhost:8000/") {
+    setTimeout(() => {
+      window.location.href = '/about';
+    }, 28000);
+  }
   
   return (
     <div className="terminal-container">
