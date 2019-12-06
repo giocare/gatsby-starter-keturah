@@ -22,7 +22,6 @@ class PortfolioPage extends Component {
   }
   
   render() {
-    console.log(this.state.navToggle, window.screen.availWidth)
     const toggler = () => {
       if(this.state.navToggle === true) {
         return(
