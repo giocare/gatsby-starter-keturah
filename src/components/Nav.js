@@ -5,42 +5,44 @@ import { faAngleDown, faFolder } from '@fortawesome/free-solid-svg-icons'
 import { faFile } from '@fortawesome/free-regular-svg-icons'
 
 class Nav extends React.Component  {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     portfolio_active: true,
-  //     about_active: false,
-  //     is_post: false,
-  //     home_classname: "nav-item active-link",
-  //     about_classname: "nav-item",
-  //     post_nav_container: "nav-container",
-  //   }
-  // }
+  constructor() {
+    super();
+    this.state = {
+      portfolio_active: true,
+      about_active: false,
+      index_classname:"uncliked-file",
+      about_classname: "unclicked-file",
+      portfolio_classname: "clicked-file",
+      contact_classname: "unclicked-file",
+
+    }
+  }
   
-  // componentDidMount() {
-  //   if(window.location.href.includes("portfolio")) {
-  //     this.setState({ 
-  //       home_active: false,
-  //       about_active: false,
-  //       is_post: true,
-  //       home_classname: "nav-item",
-  //       about_classname: "nav-item",
-  //       post_nav_container: "post-nav-container",
-  //     })
-  //   }
-  //   else if(window.location.href.includes("about")) {
-  //     this.setState({ 
-  //       home_active: false,
-  //       about_active: true,
-  //       is_post: false,
-  //       home_classname: "nav-item",
-  //       about_classname: "nav-item active-link",
-  //       post_nav_container: "nav-container",
-  //     })
-  //   }
-  // }
+  componentDidMount() {
+    if(window.location.href.includes("portfolio")) {
+      this.setState({ 
+        portfolio_active: true,
+        about_active: false,
+        index_classname:"unclicked-file",
+        about_classname: "unclicked-file",
+        portfolio_classname: "clicked-file",
+        contact_classname: "unclicked-file",
+      })
+    }
+    else if(window.location.href.includes("about")) {
+      this.setState({ 
+        portfolio_active: false,
+        about_active: true,
+        index_classname:"unclicked-file",
+        about_classname: "clicked-file",
+        portfolio_classname: "unclicked-file",
+        contact_classname: "unclicked-file",
+      })
+    }
+  }
   
   render() {
+    const { index_classname, portfolio_classname, about_classname, contact_classname } = this.state; 
     return(
       <div className="navbar-container">
         <div className="navbar-list">
@@ -53,22 +55,22 @@ class Nav extends React.Component  {
 
         <div className="navbar-pages-container">
             <div className="navbar-pages">
-                <FontAwesomeIcon icon={ faFile } style={{ color: '#536A7C', fontSize:'30px', float:'left'}}/>
+                <FontAwesomeIcon icon={ faFile } className={index_classname} style={{ fontSize:'30px', float:'left'}}/>
                 &nbsp;&nbsp;&nbsp;
                 <Link to="/"><p>index.html</p></Link>
             </div>
             <div className="navbar-pages">
-                <FontAwesomeIcon icon={ faFile } style={{ color: '#536A7C', fontSize:'30px', float:'left'}}/>
+                <FontAwesomeIcon icon={ faFile } className={about_classname} style={{ fontSize:'30px', float:'left'}}/>
                 &nbsp;&nbsp;&nbsp;
                 <Link to="/about"><p>about.html</p></Link>
             </div>
             <div className="navbar-pages">
-                <FontAwesomeIcon icon={ faFile } style={{ color: '#86CAFF', fontSize:'30px', float:'left'}}/>
+                <FontAwesomeIcon icon={ faFile } className={portfolio_classname} style={{ fontSize:'30px', float:'left'}}/>
                 &nbsp;&nbsp;&nbsp;
                 <Link to="/portfolio"><p>projects.html</p></Link>
             </div>
             <div className="navbar-pages">
-                <FontAwesomeIcon icon={ faFile } style={{ color: '#536A7C', fontSize:'30px', float:'left'}}/>
+                <FontAwesomeIcon icon={ faFile } className={contact_classname} style={{ fontSize:'30px', float:'left'}}/>
                 &nbsp;&nbsp;&nbsp;
                 <Link to="/"><p>contact.html</p></Link>
             </div>

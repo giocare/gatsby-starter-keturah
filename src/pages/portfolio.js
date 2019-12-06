@@ -4,8 +4,6 @@ import SEO from "../components/seo"
 import Nav from "../components/Nav"
 import Main from "../components/Main"
 
-
-
 class PortfolioPage extends Component {
   constructor() {
     super();

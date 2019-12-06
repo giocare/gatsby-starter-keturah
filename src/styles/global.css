@@ -67,6 +67,13 @@
     font-family: Roboto;
 }
 
+.unclicked-file {
+    color: #536A7C;
+}
+
+.clicked-file {
+    color: #86CAFF;
+}
 /* */
 
 
