@@ -361,35 +361,43 @@ header {
     overflow: auto
 }
 
+.about-content-container {
+    margin-left: 12%;
+}
+
 .comments {
     display: inline-block;
     color: rgb(71, 71, 71);
     line-height: 5px;
-    margin-left: 10%;
+    /* margin-left: 2%; */
     font-size: 15px;
     margin-top: 15px;
 }
 
 .about-main-section {
     display: inline-block;
-    width: 70%;
-    margin-top: 2%;
-    margin-left: 5%;
+    width: 100%;
+    margin-top: 50px;
+    /* margin-left: 2%; */
 }
 
 .about-list {
     list-style-type: none;
     color: lightgray;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* margin-left: 10%; */
+    margin-right: 13%;
     font-size: 16px;
     display: inline-block;
     width: 40%;
 }
 
+ul {
+    margin-left: 0 !important;
+}
+
 .about-image-container {
     display: inline-block;
-    width: 40%;
+    width: 22rem;
     object-fit: cover;
 }
 
