@@ -3,16 +3,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import Typist from 'react-typist'
 import Delay from 'react-delay'
+import { Link } from "gatsby"
+
 
 class Terminal extends Component {
   
-  componentDidMount() {
-    if(window.location.href === "http://localhost:8000/") {
+  // componentDidMount() {
+  //   if(window.location.href === "http://localhost:8000/") {
+  //     setTimeout(() => {
+  //       window.location.href = '/about';
+  //     }, 28000);
+  //   }
+  // }
+
+ componentDidMount() {
       setTimeout(() => {
-        window.location.href = '/about';
+        window.location.replace(`/about`)
       }, 28000);
     }
-  }
+  
+
   
   render() {
     const { command1, command2, name, description } = this.props.data;
