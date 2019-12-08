@@ -429,3 +429,9 @@ ul {
     }
 
 }
+
+@media (max-width:450px) and (min-width:400px) {
+    .line-numbers {
+        width: 5%;
+    }
+}
